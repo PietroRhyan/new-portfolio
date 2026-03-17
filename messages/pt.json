@@ -1,5 +1,10 @@
 {
   "home": {
-    "welcome": "Bem-vindo ao nosso site!"
+    "navbar": {
+      "intro": "Intro",
+      "experiences": "Experiências",
+      "about": "Sobre mim",
+      "ambitions": "Ambições"
+    }
   }
 }

@@ -10,13 +10,16 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-dark-grey: #1a1a1a;
-  --color-grey: #c5c5c5;
+  --color-dark-gray: #1a1a1a;
+  --color-gray: #c5c5c5;
 
   /* Fonts */
   --font-inter: var(--font-inter);
   --font-playfair: var(--font-playfair-display);
   --font-outfit: var(--font-outfit);
+
+  /* Texts */
+  --text-sm: 14px;
 }
 
 body {

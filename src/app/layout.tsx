@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
 import Providers from "./providers";
 
 const inter = Inter({
@@ -37,7 +38,10 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfairDisplay.variable} ${outfit.variable} antialiased`}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

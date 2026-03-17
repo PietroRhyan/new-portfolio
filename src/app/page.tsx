@@ -1,13 +1,8 @@
-import { useTranslations } from "next-intl";
-import LocaleSwitcher from "@/components/locale-switcher";
-
 export default function Home() {
-  const t = useTranslations("home");
 
   return (
-    <div>
-      <h1>{t("welcome")}</h1>
-      <LocaleSwitcher />
-    </div>
-  );
+    <main className="h-[calc(100dvh-69px)] max-w-216 mx-auto border-x border-dashed border-x-dark-gray px-9">
+      Olá
+    </main>
+  )
 }
