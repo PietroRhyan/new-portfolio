@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Providers from "./providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,7 +23,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Pietro Rhyan",
-  description: "Pietro Rhyan is a software engineer specializing in frontend development, with a passion for creating intuitive and engaging user interfaces. With expertise in React, Next.js, and TypeScript, Pietro has a proven track record of delivering high-quality web applications. He is dedicated to continuous learning and staying up-to-date with the latest industry trends to ensure his work remains innovative and effective.",
+  description:
+    "Pietro Rhyan is a software engineer specializing in frontend development, with a passion for creating intuitive and engaging user interfaces. With expertise in React, Next.js, and TypeScript, Pietro has a proven track record of delivering high-quality web applications. He is dedicated to continuous learning and staying up-to-date with the latest industry trends to ensure his work remains innovative and effective.",
 };
 
 export default function RootLayout({
@@ -35,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfairDisplay.variable} ${outfit.variable} antialiased`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
