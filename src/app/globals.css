@@ -20,6 +20,28 @@
 
   /* Texts */
   --text-sm: 14px;
+
+  /* Animations */
+  --animate-scroll-up: scroll-up 12s linear infinite;
+  --animate-scroll-down: scroll-down 12s linear infinite;
+}
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50%);
+  }
 }
 
 body {
