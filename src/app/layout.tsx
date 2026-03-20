@@ -11,14 +11,15 @@ const inter = Inter({
 });
 
 const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+  variable: "--font-playfair",
   weight: ["600"],
   subsets: ["latin"],
+
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
-  weight: ["600", "700"],
+  weight: ["500", "600", "700"],
   subsets: ["latin"],
 });
 

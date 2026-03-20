@@ -5,6 +5,12 @@
       "experiences": "Experiências",
       "about": "Sobre mim",
       "ambitions": "Ambições"
+    },
+    "intro": {
+      "title": "<role>Software Engineer</role>. Curioso por natureza, obcecado pela <essence>essência</essence>",
+      "description": "Sou Pietro Rhyan - um Software Engineer com mais de 5 anos de experiência no desenvolvimento de soluções web. Gosto de analisar as melhores maneiras de resolver um problema, sugerir melhorias de produto e resenhar com piadas duvidosas. Ando me aventurando com UX/UI Design.",
+      "living": "Vivendo em: <unknown>unknown</unknown> (valor sempre mudando)",
+      "contact": "Entre em contato"
     }
   }
 }

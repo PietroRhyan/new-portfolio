@@ -15,15 +15,24 @@
 
   /* Fonts */
   --font-inter: var(--font-inter);
-  --font-playfair: var(--font-playfair-display);
+  --font-playfair: var(--font-playfair);
   --font-outfit: var(--font-outfit);
 
   /* Texts */
+  --text-xs: 13px;
   --text-sm: 14px;
+  --text-base: 15px;
 
   /* Animations */
   --animate-scroll-up: scroll-up 12s linear infinite;
   --animate-scroll-down: scroll-down 12s linear infinite;
+  --animate-spin-border: spin-border 3s linear infinite;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 @keyframes scroll-up {
@@ -44,9 +53,47 @@
   }
 }
 
+@keyframes spin-border {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter);
   font-weight: 500;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+  border-radius: 12px;
+  background: conic-gradient(
+    from var(--border-angle),
+    transparent 75%,
+    #93c5fd 85%,
+    #ffffff 92%,
+    #93c5fd 100%
+  );
+  animation: spin-border 3s linear infinite;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta-button__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 12px;
+  border-radius: 10px;
+  background: linear-gradient(125deg, #f3f3f3 50%, #d2e3f7, #f3f3f3 100%);
+  transition: filter 0.2s ease;
+}
+
+.cta-button:hover .cta-button__inner {
+  filter: brightness(1.08);
 }
