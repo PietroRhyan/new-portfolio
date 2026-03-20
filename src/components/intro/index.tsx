@@ -24,8 +24,8 @@ const rProjects: ProjectType[] = [
 ];
 
 const socials: SocialProps[] = [
-  { href: "https://www.github.com/PietroRhyan", icon: <FaGithub size={20} /> },
-  { href: "https://www.linkedin.com/in/pietrorhyan/", icon: <FaLinkedin size={20} /> },
+  { href: "https://github.com/PietroRhyan", icon: <FaGithub size={20} /> },
+  { href: "https://linkedin.com/in/pietrorhyan/", icon: <FaLinkedin size={20} /> },
   { href: "https://x.com/pietrorhyan2", icon: <FaXTwitter size={20} /> },
 ];
 
@@ -35,7 +35,7 @@ export function Intro() {
   return (
     <section
       id="intro"
-      className="relative top-0 -left-px w-[calc(100%+2px)] bg-background p-9 border-x border-x-background space-y-8"
+      className="relative top-0 -left-px w-[calc(100%+2px)] bg-background p-9 border-x border-x-background space-y-8 mb-6"
     >
       <div className="relative w-full flex items-center justify-center gap-4">
         <div className="overflow-hidden h-[275px] w-[50%]">
