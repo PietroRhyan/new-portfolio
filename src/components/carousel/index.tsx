@@ -21,7 +21,7 @@ export function Carousel() {
   return (
     <section
       id="intro"
-      className="absolute top-0 -left-px my-6 w-[calc(100%+2px)] bg-background p-9 border-x border-x-background flex items-center justify-center gap-4"
+      className="relative top-0 -left-px w-[calc(100%+2px)] bg-background p-9 border-x border-x-background flex items-center justify-center gap-4"
     >
       <div className="overflow-hidden h-[275px] w-[calc(50%-18px)]">
         <div className="flex flex-col animate-scroll-up">
