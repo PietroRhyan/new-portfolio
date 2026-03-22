@@ -12,5 +12,8 @@
       "living": "Vivendo em: <unknown>unknown</unknown> (valor sempre mudando)",
       "contact": "Entre em contato"
     }
+  },
+  "commom": {
+    "seeMore": "Veja mais"
   }
 }
