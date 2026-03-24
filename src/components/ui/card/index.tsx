@@ -44,15 +44,16 @@ export function Card({
         )}
 
         <div className="w-full h-full p-6 flex flex-col gap-4">
-          <div className="w-full flex items-start justify-between gap-6">
-            <div className="flex flex-col gap-0.5">
+          <div className="w-full">
+            <div className="w-full flex items-center justify-between">
               <h4 className="text-lg">{title}</h4>
-              {style === "full" && startDate && (
-                <span className="text-xs text-gray/50">{formattedDate}</span>
-              )}
+
+              <span className="text-base text-foreground/60">{role}</span>
             </div>
 
-            <span className="text-base text-foreground/60">{role}</span>
+            {style === "full" && startDate && (
+              <span className="text-xs text-gray/50">{formattedDate}</span>
+            )}
           </div>
 
           <p className="text-base text-foreground/80 leading-4.5 line-clamp-3">
