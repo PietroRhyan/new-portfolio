@@ -3,17 +3,55 @@
     "navbar": {
       "intro": "Intro",
       "experiences": "Experiências",
+      "descExperiences": "Experiência profissional, projetos e outros...",
       "about": "Sobre mim",
-      "ambitions": "Ambições"
+      "descAbout": "Síntese da carreira, habilidades e inspirações",
+      "ambitions": "Ambições",
+      "descAmbitions": "Objetivos de vida e carreira"
     },
     "intro": {
       "title": "<role>Software Engineer</role>. Curioso por natureza, obcecado pela <essence>essência</essence>",
       "description": "Sou Pietro Rhyan - um Software Engineer com mais de 5 anos de experiência no desenvolvimento de soluções web. Gosto de analisar as melhores maneiras de resolver um problema, sugerir melhorias de produto e resenhar com piadas duvidosas. Ando me aventurando com UX/UI Design.",
       "living": "Vivendo em: <unknown>unknown</unknown> (valor sempre mudando)",
       "contact": "Entre em contato"
+    },
+    "about": {
+      "tabs": {
+        "aboutMe": "Sobre",
+        "skills": "Habilidades"
+      },
+      "aboutmeContent": {
+        "paragraph1": "Fui introduzido ao mundo do desenvolvimento de software desde a minha ingressão ao curso de TI no Instituto Federal da Bahia em 2017. Fazendo apps, diagramas de arquitetura de software e mexendo com ponteiros em C++ e outros. Eu fiquei apaixonado por esta área e fui me interessando mais e mais.",
+        "paragraph2": "Participei de campeonatos de programação, do qual fui vice-campeão em uma das edições - competia com os amigos sobre quem fazia o melhor programa (mais eficiente com menos linhas haha), me juntava para criarmos alguns websites e etc... Experiências que me tiravam da zona de conforto para conhecer mais sobre e aplicar no casos que eu estava inserido.",
+        "paragraph3": "Em 2021 dei início a minha graduação como Bacharelado em Ciências da Computação. No mesmo ano consegui passar em um processo seletivo para ser Trainee de uma empresa de tecnologia de Fortaleza, da qual me ofereceu uma bolsa de estudos que pude aproveitar e ver cursos por fora, além da faculdade.",
+        "paragraph4": "Em 2022 construí a Fros Venture junto com amigos, um projeto muito massa que fizemos para ganhar experiência real e que nos ajudou bastante. Durante 2023 passei por situações complicadas na vida pessoal, me obrigando a trancar a faculdade. Apesar das dificuldades, são os problemas que encontramos durante a vida que fazem com que conquistemos novos níveis. Pude trabalhar como TI na Secretaria da minha cidade e em 2024 pude estar atuando como Desenvolvedor Frontend em uma empresa de SC, da qual atuo até hoje, dando sugestões que impactam milhares de clientes e liderando em diversas funcionalidades."
+      },
+      "skillsContent": {
+        "languages": {
+          "skill": "Linguagens/Frameworks",
+          "content": "Javascript, Typescript, Python, C++, React, Next.js, Angular, Node.js;"
+        },
+        "databases": {
+          "skill": "Bancos de Dados",
+          "content": "MySQL, PostgreSQL, Mongo, Redis;"
+        },
+        "devops": {
+          "skill": "DevOps/Cloud",
+          "content": "Docker, GitHub Actions, Jenkins, Azure DevOps, AWS;"
+        },
+        "architecture": {
+          "skill": "Arquitetura/Outros",
+          "content": "Microsserviços, Monolitos, Clean Architecture, SOLID, DDD, TDD, Clean Code, MVVM, Hexagonal, KISS;"
+        },
+        "agile": {
+          "skill": "Metodologias ágeis",
+          "content": "Scrum & Kanban via Jira, Azure DevOps e Linear."
+        }
+      }
     }
   },
   "commom": {
-    "seeMore": "Veja mais"
+    "seeMore": "Veja mais",
+    "soon": "Muito mais em breve"
   }
 }
