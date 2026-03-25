@@ -41,7 +41,9 @@ export default function RootLayout({
       >
         <Providers>
           <Navbar />
-          {children}
+          <div className="mx-4" >
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>

@@ -19,7 +19,7 @@ export function Navbar() {
   return (
     <header className="w-full py-6 border-b border-b-dark-gray">
       <nav className="max-w-216 mx-auto">
-        <ul className="flex items-center justify-center gap-9 list-none">
+        <ul className="flex items-center justify-center gap-6 sm:gap-9 list-none">
           {sections.map((section) => (
             <Link key={section.name} href={section.link}>
               <li className="font-outfit text-sm text-gray/50 transition-colors duration-200 hover:text-gray">{section.name}</li>

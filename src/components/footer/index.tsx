@@ -12,7 +12,7 @@ export function Footer() {
 
   return (
     <footer className="w-full border-t border-t-dark-gray " >
-      <div className="max-w-216 mx-auto pb-7 flex flex-col gap-20" >
+      <div className="max-w-216 mx-auto pb-7 px-4 md:px-0 flex flex-col gap-20" >
         <div className="flex items-end justify-start overflow-hidden flex-wrap" >
           <h1 className="font-outfit text-[96px] font-bold bg-clip-text text-transparent bg-linear-to-b from-dark-gray/50 to-gray/50 uppercase leading-[72px] -mt-1.5 -ml-1.5">Pietro Rhyan</h1>
           <div className="flex flex-col gap-0 leading-3 text-xs text-gray/50 -ml-1" >
