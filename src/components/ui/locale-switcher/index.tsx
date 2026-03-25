@@ -28,15 +28,15 @@ export default function LocaleSwitcher() {
       className="relative flex items-center bg-dark-gray rounded-full p-1 cursor-pointer select-none transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
     >
       <div
-        className={`absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-full bg-foreground transition-transform duration-300 ease-in-out ${!isPT ? "translate-x-full" : ""}`}
+        className={`absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-full bg-background transition-transform duration-300 ease-in-out ${!isPT ? "translate-x-full" : ""}`}
       />
       <span
-        className={`relative z-10 px-4 py-1 font-outfit text-xs font-semibold transition-colors duration-300 ${isPT ? "text-background" : "text-gray/50"}`}
+        className={`relative z-10 px-4 py-1 font-outfit text-xs font-semibold transition-colors duration-300 ${isPT ? "text-foreground" : "text-gray/50"}`}
       >
         PT
       </span>
       <span
-        className={`relative z-10 px-4 py-1 font-outfit text-xs font-semibold transition-colors duration-300 ${!isPT ? "text-background" : "text-gray/50"}`}
+        className={`relative z-10 px-4 py-1 font-outfit text-xs font-semibold transition-colors duration-300 ${!isPT ? "text-foreground" : "text-gray/50"}`}
       >
         EN
       </span>

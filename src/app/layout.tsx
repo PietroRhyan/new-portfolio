@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import Providers from "./providers";
 
@@ -14,7 +15,6 @@ const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   weight: ["600"],
   subsets: ["latin"],
-
 });
 
 const outfit = Outfit({
@@ -42,6 +42,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

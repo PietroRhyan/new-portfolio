@@ -23,7 +23,7 @@ const rProjects: ProjectType[] = [
   { name: "CMA", href: "/images/cma.png" },
 ];
 
-const socials: SocialProps[] = [
+export const socials: SocialProps[] = [
   { href: "https://github.com/PietroRhyan", icon: <FaGithub size={20} /> },
   { href: "https://linkedin.com/in/pietrorhyan/", icon: <FaLinkedin size={20} /> },
   { href: "https://x.com/pietrorhyan2", icon: <FaXTwitter size={20} /> },

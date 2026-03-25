@@ -31,7 +31,7 @@ export default function Home() {
       <Section
         id="ambitions"
         title={t("ambitions")}
-        description={t("descAbout")}
+        description={t("descAmbitions")}
       >
         <Ambitions />
       </Section>

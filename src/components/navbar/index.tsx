@@ -17,8 +17,8 @@ export function Navbar() {
   ];
 
   return (
-    <header className="w-full py-6 flex items-center justify-center border-b border-b-dark-gray">
-      <nav className="max-w-216">
+    <header className="w-full py-6 border-b border-b-dark-gray">
+      <nav className="max-w-216 mx-auto">
         <ul className="flex items-center justify-center gap-9 list-none">
           {sections.map((section) => (
             <Link key={section.name} href={section.link}>
