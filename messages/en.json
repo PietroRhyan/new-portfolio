@@ -15,6 +15,28 @@
       "living": "Vivendo em: <unknown>unknown</unknown> (valor sempre mudando)",
       "contact": "Entre em contato"
     },
+    "ambitions": {
+      "personal": {
+        "title": "Pessoal",
+        "item0": "Ler mais livros no ano (próximos: Metamorfose - Franz Kafka, O Pequeno Príncipe - Antoine de Saint-Exupéry)",
+        "item1": "Voltar a praticar o futebol arte",
+        "item2": "Me mudar para uma grande cidade (SP, Floripa, Curitiba, Goiânia, Aracaju, etc)",
+        "item3": "Viajar para outros países e conhecer novas culturas",
+        "item4": "Construir uma boa reserva econômica",
+        "item5": "Praticar um hobbie que não domino (tocar violão/ guitarra)",
+        "item6": "Retornar a faculdade e terminar minha graduação"
+      },
+      "professional": {
+        "title": "Carreira",
+        "item0": "Conseguir uma certificação de inglês de, no mínimo, C1",
+        "item1": "Fazer um curso voltado a Arquitetura de Software",
+        "item2": "Ir à um evento de tecnologia",
+        "item3": "Trabalhar e receber em uma moeda forte (ex.: dólar)",
+        "item4": "Aprender e criar um projeto em .NET",
+        "item5": "Aprimorar minhas habilidades e ganhar uma certificação em Design",
+        "item6": "Melhorar minhas habilidades e desenvolver um projeto para mobile com React Native e, posteriomente, com uma linguagem dedicada (Kotlin e/ou Swift)"
+      }
+    },
     "about": {
       "tabs": {
         "aboutMe": "Sobre",
