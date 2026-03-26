@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export function AboutMePhotos() {
   return (
-    <div className="w-[360px] h-[300px] md:w-[306px] md:h-[530px] relative">
-      <div className="absolute top-0 left-0 w-[235px] h-[282px] rounded-xl overflow-hidden">
+    <div className="w-[360px] h-[250px] sm:h-[300px] md:w-[306px] md:h-[530px] relative">
+      <div className="absolute top-0 left-6 sm:left-0 w-[185px] h-[200px] sm:w-[235px] sm:h-[282px] rounded-xl overflow-hidden">
         <Image
           src='/images/me-1.png'
           alt="Photo of mine"
@@ -13,7 +13,7 @@ export function AboutMePhotos() {
         />
       </div>
 
-      <div className="absolute top-1/2 -translate-y-1/2 right-0 w-[210px] h-[220px] rounded-xl overflow-hidden z-20">
+      <div className="absolute sm:top-1/2 sm:-translate-y-1/2 bottom-0 right-6 sm:right-0 w-[165px] h-[175px] sm:w-[210px] sm:h-[220px] rounded-xl overflow-hidden z-20">
         <Image
           src='/images/me-2.png'
           alt="Photo of mine"

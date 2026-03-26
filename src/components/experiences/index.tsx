@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { CardProps, Card } from "../ui/card";
+import { Card, type CardProps } from "../ui/card";
 
 const mainExperiences: CardProps[] = [
   {
@@ -32,7 +32,7 @@ const experiences: CardProps[] = [
 ];
 
 export function Experiences() {
-  const t = useTranslations('commom')
+  const t = useTranslations("commom");
 
   return (
     <div className="w-full flex flex-col items-center gap-6">
@@ -62,7 +62,7 @@ export function Experiences() {
         ))}
       </div>
 
-      <p className="text-xs text-gray/50">{t('soon')}</p>
+      <p className="text-xs text-gray/50">{t("soon")}</p>
     </div>
-  )
+  );
 }

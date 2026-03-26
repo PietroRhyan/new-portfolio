@@ -86,10 +86,10 @@ export function Intro() {
 
         <div
           role="presentation"
-          className="absolute z-10 w-full h-full top-0 left-0 bottom-0 bg-linear-to-b from-10% from-background via-background/70 to-background to-90% p-6"
+          className="absolute z-10 w-full h-full top-0 left-0 bottom-0 bg-linear-to-b from-10% from-background via-background/70 to-background to-90% py-6 px-2 sm:p-6"
         >
           <div className="relative flex items-center justify-center w-full h-full">
-            <h1 className="font-outfit text-5xl font-semibold max-w-[740px]">
+            <h1 className="font-outfit text-3xl sm:text-5xl font-semibold max-w-[740px]">
               {t.rich("title", {
                 role: (chunk) => (
                   <span className="font-playfair italic font-semibold">
@@ -107,7 +107,7 @@ export function Intro() {
         </div>
       </div>
 
-      <div className="w-full flex items-start justify-between">
+      <div className="w-full flex flex-col sm:flex-row items-center justify-center sm:items-start sm:justify-between gap-9 sm:gap-6">
         <div className="flex flex-col gap-6" >
           <div className="flex items-center gap-4">
             <Avatar />
