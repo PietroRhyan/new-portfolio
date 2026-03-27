@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find '/c/Users/pietr/Desktop/Everything/Dev Apps/IndividualProjects/new-portfolio/node_modules/contentful/dist' -name *.d.ts)",
+      "Bash(find '/c/Users/pietr/Desktop/Everything/Dev Apps/IndividualProjects/new-portfolio/node_modules/contentful-typescript-codegen' -name *.d.ts)",
+      "Bash(xargs grep:*)",
+      "Bash(find '/c/Users/pietr/Desktop/Everything/Dev Apps/IndividualProjects/new-portfolio/node_modules/@contentful' -name *.d.ts)",
+      "Bash(npx tsc:*)",
+      "Bash(grep -v \"\\\\.map$\")",
+      "Bash(npm view:*)"
+    ]
+  }
+}

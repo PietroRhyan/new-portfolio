@@ -1,9 +1,11 @@
+import type { Asset, UnresolvedLink } from "contentful";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { getImageUrl } from "@/lib/types";
 
 export interface CardProps {
-  img?: string;
+  img?: UnresolvedLink<"Asset"> | Asset<undefined, string>;
   title: string;
   role: string;
   description: string;
@@ -26,16 +28,18 @@ export function Card({
   const t = useTranslations("commom");
 
   const formattedDate = `${startDate} - ${endDate}`;
+  const imageUrl = img ? getImageUrl(img) : null
 
   return (
     <Link href={href} className="rounded-2xl group">
       <div className="w-full bg-background rounded-2xl border border-dark-gray cursor-pointer flex flex-col sm:flex-row overflow-hidden shadow-container hover:bg-radial-[at_10%_100%] transition-colors duration-200 hover:border-gray/20 hover:from-[#2F2F2F] hover:to-background hover:to-50%">
-        {style === "full" && img && (
-          <div className="relative w-full h-52 sm:w-[166px] sm:h-auto shrink-0">
+        {style === "full" && imageUrl && (
+          <div className="relative w-full h-52 sm:w-[166px] sm:h-auto sm:self-stretch shrink-0">
             <Image
-              src={img}
-              alt="Card Image"
+              src={imageUrl}
+              alt={`${title} image`}
               fill
+              sizes="(max-width: 640px) 100vw, 166px"
               quality={80}
               draggable={false}
               className="object-cover"
