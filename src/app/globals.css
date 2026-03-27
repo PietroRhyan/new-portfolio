@@ -106,3 +106,9 @@ body {
 .cta-button:hover .cta-button__inner {
   filter: brightness(1.08);
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
