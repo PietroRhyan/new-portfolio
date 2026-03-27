@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { getLocale } from "next-intl/server";
 import { getAllAwards } from "@/lib/awards";
 import { getAllProjects } from "@/lib/projects";
 import { Card } from "../ui/card";
@@ -6,8 +7,14 @@ import { SmallCard } from "../ui/card/small-card";
 
 export async function Experiences() {
   const t = useTranslations("commom");
-  const projects = await getAllProjects();
-  const awards = await getAllAwards();
+  const locale = await getLocale();
+
+  const lang = locale === "en" ? "en-US" : "pt-BR";
+
+  const [projects, awards] = await Promise.all([
+    getAllProjects(lang),
+    getAllAwards(lang),
+  ]);
 
   const mainExperiences = projects.filter(
     (project) => project.fields.style === "full",
