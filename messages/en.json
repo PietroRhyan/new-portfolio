@@ -2,59 +2,59 @@
   "home": {
     "navbar": {
       "intro": "Intro",
-      "experiences": "Experiências",
-      "descExperiences": "Experiência profissional, projetos e outros...",
-      "about": "Sobre mim",
-      "descAbout": "Síntese da carreira, habilidades e inspirações",
-      "ambitions": "Ambições",
-      "descAmbitions": "Objetivos de vida e carreira"
+      "experiences": "Experiences",
+      "descExperiences": "Professional experience, projects and more...",
+      "about": "About me",
+      "descAbout": "Career summary, skills and inspirations",
+      "ambitions": "Ambitions",
+      "descAmbitions": "Life and career goals"
     },
     "intro": {
-      "title": "<role>Software Engineer</role>. Curioso por natureza, obcecado pela <essence>essência</essence>",
-      "description": "Sou Pietro Rhyan - um Software Engineer com mais de 5 anos de experiência no desenvolvimento de soluções web. Gosto de analisar as melhores maneiras de resolver um problema, sugerir melhorias de produto e resenhar com piadas duvidosas. Ando me aventurando com UX/UI Design.",
-      "living": "Vivendo em: <unknown>unknown</unknown> (valor sempre mudando)",
-      "contact": "Entre em contato"
+      "title": "<role>Software Engineer</role>. Curious by nature, obsessed with <essence>essence</essence>",
+      "description": "I'm Pietro Rhyan - a Software Engineer with over 5 years of experience building web solutions. I enjoy analyzing the best ways to solve a problem, suggesting product improvements and cracking questionable jokes. I've been venturing into UX/UI Design.",
+      "living": "Living in: <unknown>unknown</unknown> (always changing value)",
+      "contact": "Get in touch"
     },
     "ambitions": {
       "personal": {
-        "title": "Pessoal",
-        "item0": "Ler mais livros no ano (próximos: Metamorfose - Franz Kafka, O Pequeno Príncipe - Antoine de Saint-Exupéry)",
-        "item1": "Voltar a praticar o futebol arte",
-        "item2": "Me mudar para uma grande cidade (SP, Floripa, Curitiba, Goiânia, Aracaju, etc)",
-        "item3": "Viajar para outros países e conhecer novas culturas",
-        "item4": "Construir uma boa reserva econômica",
-        "item5": "Praticar um hobbie que não domino (tocar violão/ guitarra)",
-        "item6": "Retornar a faculdade e terminar minha graduação"
+        "title": "Personal",
+        "item0": "Read more books this year (next up: Metamorphosis - Franz Kafka, The Little Prince - Antoine de Saint-Exupéry)",
+        "item1": "Get back to playing freestyle football",
+        "item2": "Move to a big city (São Paulo, Floripa, Curitiba, Goiânia, Aracaju, etc.)",
+        "item3": "Travel to other countries and experience new cultures",
+        "item4": "Build a solid financial reserve",
+        "item5": "Pick up a hobby I haven't mastered yet (playing acoustic/electric guitar)",
+        "item6": "Return to college and finish my degree"
       },
       "professional": {
-        "title": "Carreira",
-        "item0": "Conseguir uma certificação de inglês de, no mínimo, C1",
-        "item1": "Fazer um curso voltado a Arquitetura de Software",
-        "item2": "Ir à um evento de tecnologia",
-        "item3": "Trabalhar e receber em uma moeda forte (ex.: dólar)",
-        "item4": "Aprender e criar um projeto em .NET",
-        "item5": "Aprimorar minhas habilidades e ganhar uma certificação em Design",
-        "item6": "Melhorar minhas habilidades e desenvolver um projeto para mobile com React Native e, posteriomente, com uma linguagem dedicada (Kotlin e/ou Swift)"
+        "title": "Career",
+        "item0": "Obtain an English certification of at least C1",
+        "item1": "Take a course focused on Software Architecture",
+        "item2": "Attend a tech event",
+        "item3": "Work and get paid in a strong currency (e.g., USD)",
+        "item4": "Learn and build a project in .NET",
+        "item5": "Sharpen my skills and earn a Design certification",
+        "item6": "Improve my skills and develop a mobile project with React Native and, later on, with a dedicated language (Kotlin and/or Swift)"
       }
     },
     "about": {
       "tabs": {
-        "aboutMe": "Sobre",
-        "skills": "Habilidades"
+        "aboutMe": "About",
+        "skills": "Skills"
       },
       "aboutmeContent": {
-        "paragraph1": "Fui introduzido ao mundo do desenvolvimento de software desde a minha ingressão ao curso de TI no Instituto Federal da Bahia em 2017. Fazendo apps, diagramas de arquitetura de software e mexendo com ponteiros em C++ e outros. Eu fiquei apaixonado por esta área e fui me interessando mais e mais.",
-        "paragraph2": "Participei de campeonatos de programação, do qual fui vice-campeão em uma das edições - competia com os amigos sobre quem fazia o melhor programa (mais eficiente com menos linhas haha), me juntava para criarmos alguns websites e etc... Experiências que me tiravam da zona de conforto para conhecer mais sobre e aplicar no casos que eu estava inserido.",
-        "paragraph3": "Em 2021 dei início a minha graduação como Bacharelado em Ciências da Computação. No mesmo ano consegui passar em um processo seletivo para ser Trainee de uma empresa de tecnologia de Fortaleza, da qual me ofereceu uma bolsa de estudos que pude aproveitar e ver cursos por fora, além da faculdade.",
-        "paragraph4": "Em 2022 construí a Fros Venture junto com amigos, um projeto muito massa que fizemos para ganhar experiência real e que nos ajudou bastante. Durante 2023 passei por situações complicadas na vida pessoal, me obrigando a trancar a faculdade. Apesar das dificuldades, são os problemas que encontramos durante a vida que fazem com que conquistemos novos níveis. Pude trabalhar como TI na Secretaria da minha cidade e em 2024 pude estar atuando como Desenvolvedor Frontend em uma empresa de SC, da qual atuo até hoje, dando sugestões que impactam milhares de clientes e liderando em diversas funcionalidades."
+        "paragraph1": "I was introduced to the world of software development when I enrolled in the IT program at the Federal Institute of Bahia in 2017. Building apps, drawing software architecture diagrams, and wrestling with pointers in C++ and more — I fell in love with this field and kept wanting to learn more.",
+        "paragraph2": "I took part in programming competitions, where I was runner-up in one of the editions — I used to compete with friends over who could write the most efficient program with the fewest lines (haha), and we'd team up to build websites and other things. Experiences that pushed me out of my comfort zone and helped me apply new knowledge to real situations.",
+        "paragraph3": "In 2021 I started my Bachelor's degree in Computer Science. That same year I made it through a selection process to become a trainee at a tech company in Fortaleza, which offered me a scholarship I could use to take courses outside of university as well.",
+        "paragraph4": "In 2022 I co-founded Fros Venture with friends — a really cool project we built to gain real-world experience that helped us a great deal. During 2023 I went through some tough personal situations that forced me to put college on hold. Despite the challenges, it's the problems we face in life that push us to reach new levels. I was able to work in IT at my city's government office, and in 2024 I joined a company in Santa Catarina as a Frontend Developer — a role I still hold today, making suggestions that impact thousands of clients and leading the development of several features."
       },
       "skillsContent": {
         "languages": {
-          "skill": "Linguagens/Frameworks",
+          "skill": "Languages/Frameworks",
           "content": "Javascript, Typescript, Python, C++, React, Next.js, Angular, Node.js;"
         },
         "databases": {
-          "skill": "Bancos de Dados",
+          "skill": "Databases",
           "content": "MySQL, PostgreSQL, Mongo, Redis;"
         },
         "devops": {
@@ -62,23 +62,23 @@
           "content": "Docker, GitHub Actions, Jenkins, Azure DevOps, AWS;"
         },
         "architecture": {
-          "skill": "Arquitetura/Outros",
-          "content": "Microsserviços, Monolitos, Clean Architecture, SOLID, DDD, TDD, Clean Code, MVVM, Hexagonal, KISS;"
+          "skill": "Architecture/Other",
+          "content": "Microservices, Monoliths, Clean Architecture, SOLID, DDD, TDD, Clean Code, MVVM, Hexagonal, KISS;"
         },
         "agile": {
-          "skill": "Metodologias ágeis",
-          "content": "Scrum & Kanban via Jira, Azure DevOps e Linear."
+          "skill": "Agile methodologies",
+          "content": "Scrum & Kanban via Jira, Azure DevOps and Linear."
         }
       }
     },
     "footer": {
-      "thanks": "obrigado",
-      "tooSee": "por ver",
-      "myPortfolio": "meu portfólio"
+      "thanks": "thank you",
+      "tooSee": "for visiting",
+      "myPortfolio": "my portfolio"
     }
   },
   "commom": {
-    "seeMore": "Veja mais",
-    "soon": "Muito mais em breve"
+    "seeMore": "See more",
+    "soon": "Much more coming soon"
   }
 }
