@@ -31,7 +31,7 @@ export function Card({
   const imageUrl = img ? getImageUrl(img) : null
 
   return (
-    <Link href={href} className="rounded-2xl group">
+    <Link href={`/experiences/${href}`} className="rounded-2xl group">
       <div className="w-full bg-background rounded-2xl border border-dark-gray cursor-pointer flex flex-col sm:flex-row overflow-hidden shadow-container hover:bg-radial-[at_10%_100%] transition-colors duration-200 hover:border-gray/20 hover:from-[#2F2F2F] hover:to-background hover:to-50%">
         {style === "full" && imageUrl && (
           <div className="relative w-full h-52 sm:w-[166px] sm:h-auto sm:self-stretch shrink-0">
@@ -52,7 +52,7 @@ export function Card({
             <div className="w-full flex items-center justify-between">
               <h4 className="text-lg">{title}</h4>
 
-              <span className="text-base text-foreground/60">{role}</span>
+              <span className="text-base text-foreground/60 text-end">{role}</span>
             </div>
 
             {style === "full" && startDate && (

@@ -6,7 +6,7 @@ export function CTAButton({ label }: { label: string }) {
       href={`https://mail.google.com/mail/?view=cm&to=${EMAIL}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="cta-button group"
+      className="cta-button group shadow-button"
     >
       <span className="cta-button__inner">
         <span className="font-semibold text-[16px] font-outfit text-background">
