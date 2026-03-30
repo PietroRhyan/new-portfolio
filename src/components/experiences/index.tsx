@@ -34,7 +34,7 @@ export async function Experiences() {
           role={project.fields.role}
           description={project.fields.description}
           href={project.fields.slug}
-          img={project.fields.img}
+          img={project.fields.image}
         />
       ))}
 

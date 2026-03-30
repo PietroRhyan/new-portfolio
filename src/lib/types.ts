@@ -6,15 +6,15 @@ function isAsset(value: Asset | UnresolvedLink<"Asset">): value is Asset {
   return value.sys.type === "Asset";
 }
 
-export function getImageUrl(asset: Asset | UnresolvedLink<"Asset">): string | null {
-  if (!isAsset(asset)) return null;
+export function getImageUrl(asset: Asset | UnresolvedLink<"Asset">): string {
+  if (!isAsset(asset)) return '/images/fallback.jpg';
 
   const file = asset.fields.file as
     | AssetFile
     | Record<string, AssetFile | null>
     | undefined;
 
-  if (!file) return null;
+  if (!file) return '/images/fallback.jpg';
 
   const assetFile = (
     'url' in file
@@ -25,7 +25,7 @@ export function getImageUrl(asset: Asset | UnresolvedLink<"Asset">): string | nu
   ) as AssetFile | undefined;
 
   const url = assetFile?.url;
-  if (!url) return null;
+  if (!url) return '/images/fallback.jpg';
 
   return url.startsWith("//") ? `https:${url}` : url;
 }

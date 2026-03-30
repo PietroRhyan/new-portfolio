@@ -6,12 +6,26 @@ export interface ProjectsSkeleton {
     title: EntryFieldTypes.Text;
     role: EntryFieldTypes.Text;
     description: EntryFieldTypes.Text;
-    img: EntryFieldTypes.AssetLink;
+    image: EntryFieldTypes.AssetLink;
     startDate: EntryFieldTypes.Text;
     endDate: EntryFieldTypes.Text;
     style: EntryFieldTypes.Text;
     slug: EntryFieldTypes.Text;
   };
+}
+
+export interface PostsSkeleton {
+  contentTypeId: "posts"
+  fields: {
+    title: EntryFieldTypes.Text;
+    mainImage: EntryFieldTypes.AssetLink;
+    startDate: EntryFieldTypes.Text;
+    endDate: EntryFieldTypes.Text;
+    role: EntryFieldTypes.Text;
+    slug: EntryFieldTypes.Text;
+    tags: EntryFieldTypes.Array<EntryFieldTypes.Symbol>;
+    content: EntryFieldTypes.RichText
+  }
 }
 
 export interface AwardsSkeleton {
