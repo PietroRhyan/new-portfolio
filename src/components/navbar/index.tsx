@@ -10,10 +10,10 @@ export function Navbar() {
   const t = useTranslations("home.navbar");
 
   const sections: SectionType[] = [
-    { name: t("intro"), link: "#intro" },
-    { name: t("experiences"), link: "#experiences" },
-    { name: t("about"), link: "#aboutme" },
-    { name: t("ambitions"), link: "#ambitions" },
+    { name: t("intro"), link: "/#intro" },
+    { name: t("experiences"), link: "/#experiences" },
+    { name: t("about"), link: "/#aboutme" },
+    { name: t("ambitions"), link: "/#ambitions" },
   ];
 
   return (
