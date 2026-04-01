@@ -17,24 +17,10 @@
     },
     "ambitions": {
       "personal": {
-        "title": "Personal",
-        "item0": "Read more books this year (next up: Metamorphosis - Franz Kafka, The Little Prince - Antoine de Saint-Exupéry)",
-        "item1": "Get back to playing freestyle football",
-        "item2": "Move to a big city (São Paulo, Floripa, Curitiba, Goiânia, Aracaju, etc.)",
-        "item3": "Travel to other countries and experience new cultures",
-        "item4": "Build a solid financial reserve",
-        "item5": "Pick up a hobby I haven't mastered yet (playing acoustic/electric guitar)",
-        "item6": "Return to college and finish my degree"
+        "title": "Personal"
       },
       "professional": {
-        "title": "Career",
-        "item0": "Obtain an English certification of at least C1",
-        "item1": "Take a course focused on Software Architecture",
-        "item2": "Attend a tech event",
-        "item3": "Work and get paid in a strong currency (e.g., USD)",
-        "item4": "Learn and build a project in .NET",
-        "item5": "Sharpen my skills and earn a Design certification",
-        "item6": "Improve my skills and develop a mobile project with React Native and, later on, with a dedicated language (Kotlin and/or Swift)"
+        "title": "Career"
       }
     },
     "about": {

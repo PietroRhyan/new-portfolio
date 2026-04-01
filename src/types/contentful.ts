@@ -36,3 +36,12 @@ export interface AwardsSkeleton {
     endDate: EntryFieldTypes.Text;
   };
 }
+
+export interface AmbitionsSkeleton {
+  contentTypeId: 'ambitions'
+  fields: {
+    ambition: EntryFieldTypes.Text;
+    isChecked: EntryFieldTypes.Boolean;
+    kind: EntryFieldTypes.Text;
+  }
+}

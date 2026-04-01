@@ -1,30 +1,22 @@
-/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { getAllAmbitions } from "@/lib/ambitions";
 import { Checkbox } from "../ui/checkbox";
 import { Field, FieldLabel } from "../ui/field";
 
-export function Ambitions() {
+export async function Ambitions() {
   const t = useTranslations("home.ambitions");
+  const locale = await useLocale();
 
-  const personalAmb = [
-    { isChecked: false, label: t("personal.item0") },
-    { isChecked: false, label: t("personal.item1") },
-    { isChecked: false, label: t("personal.item2") },
-    { isChecked: false, label: t("personal.item3") },
-    { isChecked: true, label: t("personal.item4") },
-    { isChecked: false, label: t("personal.item5") },
-    { isChecked: false, label: t("personal.item6") },
-  ];
+  const lang = locale === "pt" ? "pt-BR" : "en-US";
 
-  const professionalAmb = [
-    { isChecked: true, label: t("professional.item0") },
-    { isChecked: false, label: t("professional.item1") },
-    { isChecked: true, label: t("professional.item2") },
-    { isChecked: false, label: t("professional.item3") },
-    { isChecked: false, label: t("professional.item4") },
-    { isChecked: false, label: t("professional.item5") },
-    { isChecked: false, label: t("professional.item6") },
-  ];
+  const ambitions = await getAllAmbitions(lang);
+
+  const personalAmb = ambitions.filter(
+    (ambition) => ambition.fields.kind === "personal",
+  );
+  const professionalAmb = ambitions.filter(
+    (ambition) => ambition.fields.kind === "career",
+  );
 
   return (
     <div className="max-w-[384px] w-full mx-auto flex flex-col gap-14">
@@ -38,9 +30,15 @@ export function Ambitions() {
 
         <div className="w-full flex flex-col gap-3">
           {personalAmb.map((ambition, i) => (
-            <Field key={`personal-${i}`} orientation="horizontal">
-              <Checkbox checked={ambition.isChecked} id={`personal-${i}`} name={`personal-${i}`} />
-              <FieldLabel htmlFor={`personal-${i}`}>{ambition.label}</FieldLabel>
+            <Field key={ambition.fields.ambition} orientation="horizontal">
+              <Checkbox
+                checked={ambition.fields.isChecked}
+                id={`personal-${i}`}
+                name={`personal-${i}`}
+              />
+              <FieldLabel htmlFor={`personal-${i}`}>
+                {ambition.fields.ambition}
+              </FieldLabel>
             </Field>
           ))}
         </div>
@@ -56,9 +54,15 @@ export function Ambitions() {
 
         <div className="w-full flex flex-col gap-3">
           {professionalAmb.map((ambition, i) => (
-            <Field key={`professional-${i}`} orientation="horizontal">
-              <Checkbox checked={ambition.isChecked} id={`professional-${i}`} name={`professional-${i}`} />
-              <FieldLabel htmlFor={`professional-${i}`}>{ambition.label}</FieldLabel>
+            <Field key={ambition.fields.ambition} orientation="horizontal">
+              <Checkbox
+                checked={ambition.fields.isChecked}
+                id={`professional-${i}`}
+                name={`professional-${i}`}
+              />
+              <FieldLabel htmlFor={`professional-${i}`}>
+                {ambition.fields.ambition}
+              </FieldLabel>
             </Field>
           ))}
         </div>
