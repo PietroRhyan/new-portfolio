@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
@@ -40,6 +41,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfairDisplay.variable} ${outfit.variable} antialiased`}
       >
+        <Analytics />
         <Suspense fallback={null}>
           <Providers>
             <Navbar />
