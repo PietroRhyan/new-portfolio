@@ -1,8 +1,12 @@
+import { cacheLife } from "next/cache";
 import type { PostsSkeleton, ProjectsSkeleton } from "../types/contentful";
 import { contentfulClient } from "./contentful";
 import type { Locale } from "./types";
 
 export async function getAllProjects(locale: Locale = "pt-BR") {
+  "use cache"
+  cacheLife('weeks')
+
   const response = await contentfulClient.getEntries<ProjectsSkeleton>({
     content_type: "projects",
     locale,
@@ -13,6 +17,8 @@ export async function getAllProjects(locale: Locale = "pt-BR") {
 }
 
 export async function getProjectBySlug(slug: string, locale: Locale = "pt-BR") {
+  "use cache"
+  cacheLife('weeks')
   const response = await contentfulClient.getEntries<PostsSkeleton>({
     content_type: "posts",
     "fields.slug": slug,

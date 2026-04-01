@@ -8,11 +8,11 @@ import {
   MARKS,
 } from "@contentful/rich-text-types";
 import type { Asset } from "contentful";
+import { cacheLife } from "next/cache";
 import Image from "next/image";
-import { getLocale } from "next-intl/server";
 import { Tag } from "@/components/ui/tag";
 import { getProjectBySlug } from "@/lib/projects";
-import { getImageUrl } from "@/lib/types";
+import { getImageUrl, type Locale } from "@/lib/types";
 
 const richTextOptions = {
   renderMark: {
@@ -56,7 +56,7 @@ const richTextOptions = {
             maxWidth: `${width}px`,
           }}
         >
-          <div className="w-full h-full relative overflow-hidden rounded-md" >
+          <div className="w-full h-full relative overflow-hidden rounded-md">
             <Image
               src={url}
               alt={(asset.fields.title as string) ?? "Embedded image"}
@@ -84,14 +84,19 @@ const richTextOptions = {
   },
 };
 
-export async function Content({ slug }: { slug: string }) {
-  const locale = await getLocale();
-  const lang = locale === "en" ? "en-US" : "pt-BR";
-
-  const project = await getProjectBySlug(slug, lang);
+export async function Content({
+  slug,
+  locale,
+}: {
+  slug: string;
+  locale: Locale;
+}) {
+  "use cache";
+  cacheLife("weeks");
+  const project = await getProjectBySlug(slug, locale);
   const post = project.fields;
 
-  const { content } = project.fields
+  const { content } = project.fields;
 
   const formattedDate = `${post.startDate} - ${post.endDate}`;
   const imageUrl = post.mainImage
