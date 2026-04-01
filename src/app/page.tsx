@@ -1,10 +1,13 @@
 import { useTranslations } from "next-intl";
+import { Suspense } from "react";
 import { AboutMe } from "@/components/about-me";
 import { AboutMePhotos } from "@/components/about-me-photos";
 import { Ambitions } from "@/components/ambitions";
 import { Experiences } from "@/components/experiences";
 import { Intro } from "@/components/intro";
 import { Section } from "@/components/ui/section";
+import { AmbitionsSkeleton } from "@/components/ui/skeleton/ambitions-skeleton";
+import { ProjectSkeleton } from "@/components/ui/skeleton/project-skeleton";
 
 export default function Home() {
   const t = useTranslations("home.navbar");
@@ -18,7 +21,16 @@ export default function Home() {
         title={t("experiences")}
         description={t("descExperiences")}
       >
-        <Experiences />
+
+        <Suspense fallback={
+          <div className="w-full flex flex-col gap-6" >
+            <ProjectSkeleton />
+            <ProjectSkeleton />
+            <ProjectSkeleton />
+          </div>
+        } >
+          <Experiences />
+        </Suspense>
       </Section>
 
       <Section id="aboutme" title={t("about")} description={t("descAbout")}>
@@ -33,7 +45,15 @@ export default function Home() {
         title={t("ambitions")}
         description={t("descAmbitions")}
       >
-        <Ambitions />
+        <Suspense fallback={
+          <div className="w-full flex flex-col gap-4" >
+            <AmbitionsSkeleton />
+            <AmbitionsSkeleton />
+            <AmbitionsSkeleton />
+          </div>
+        } >
+          <Ambitions />
+        </Suspense>
       </Section>
     </main>
   );

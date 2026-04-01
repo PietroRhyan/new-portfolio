@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import Providers from "./providers";
@@ -39,13 +40,13 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfairDisplay.variable} ${outfit.variable} antialiased`}
       >
-        <Providers>
-          <Navbar />
-          <div className="mx-4" >
-            {children}
-          </div>
-          <Footer />
-        </Providers>
+        <Suspense fallback={null}>
+          <Providers>
+            <Navbar />
+            <div className="mx-4">{children}</div>
+            <Footer />
+          </Providers>
+        </Suspense>
       </body>
     </html>
   );
